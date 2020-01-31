@@ -1,6 +1,6 @@
 # Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
 def reverse_words(str)
-  array = str.split(/ /) # turn a string into an array " " => splits whenever there is an empty space
+  array = str.split(/ /) # turn a string into an array - / / or /\s/ => splits whenever there is an empty space
   reversed = []
   array.each do |word| # iterate over the array with each
     reversed << word.reverse # reverse each word in the array
