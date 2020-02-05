@@ -9,10 +9,10 @@ number ["a", "b", "c"] # => ["1: a", "2: b", "3: c"]
 
 
 def number lines
-  # TODO
+  lines.map.with_index { |line, index| "#{index+1}: #{line}" }
 end
 
-puts number([])
-#[]
+# other solution: lines.each_with_index.map{|s, i| "#{i+1}: #{s}"}
+
 puts number(["a", "b", "c"])
 #["1: a", "2: b", "3: c"]
