@@ -9,10 +9,10 @@ solution('abc', 'd') // returns false
 =end
 
 def solution(str, ending)
-  # TODO: complete
+  str.end_with?(ending)
 end
 
-solution('abc', 'bc')
+puts solution('abc', 'bc')
 #true
-solution('abc', 'd')
+puts solution('abc', 'd')
 #false

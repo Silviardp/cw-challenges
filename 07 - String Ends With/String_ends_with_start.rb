@@ -12,7 +12,7 @@ def solution(str, ending)
   # TODO: complete
 end
 
-solution('abc', 'bc')
+puts solution('abc', 'bc')
 #true
-solution('abc', 'd')
+puts solution('abc', 'd')
 #false
