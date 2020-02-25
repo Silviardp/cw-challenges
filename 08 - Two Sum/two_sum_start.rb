@@ -5,8 +5,9 @@ For the purposes of this kata, some tests may have multiple answers; any valid s
 The input will always be valid (numbers will be an array of length 2 or greater, and all of the items will be numbers; target will always be the sum of two different items from that array).
 =end
 
-def two_sum(numbers, target)
-  # solution
+def twoSum(numbers, target)
+
 end
 
-puts twoSum ([1, 2, 3] 4)
+puts twoSum([1,2,3], 4);
+# 0 2
