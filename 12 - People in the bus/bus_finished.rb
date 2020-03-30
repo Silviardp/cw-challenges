@@ -14,7 +14,7 @@ The second value in the first integer array is 0, since the bus is empty in the 
 =end
 
 def number(bus_stops)
-
+  bus_stops.map {|(enter,exit)| enter-exit }.reduce(:+)
 end
 
 
