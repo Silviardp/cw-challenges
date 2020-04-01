@@ -41,5 +41,5 @@ def stockList(listOfArt, listOfCat)
   answer.join(' - ')
 end
 
-puts stockList(["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"], ["A", "B"])
+puts stockList(["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"], ["A", "W"])
 # "(A : 200) - (B : 1140)"
