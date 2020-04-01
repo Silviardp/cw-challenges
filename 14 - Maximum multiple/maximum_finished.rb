@@ -23,7 +23,7 @@ Explanation:
 =end
 
 def max_multiple(divisor, bound)
-  #your code here
+  bound - bound % divisor
 end
 
 puts max_multiple(2,7)
