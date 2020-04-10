@@ -15,10 +15,14 @@ Second argument (optional): space-delimited list of minor words that must always
 
 =end
 
-def title_case(title, minor_words)
-
+def title_case(title, minor_words= '')
+  minor_words = minor_words.downcase.split()
+  title.capitalize.split(' ').map { |word| minor_words.include?(word) ? word : word.capitalize }.join(' ')
 end
 
+
+puts title_case('')
+#''
 puts title_case('a clash of KINGS', 'a an the of')
 #'A Clash of Kings'
 puts title_case('THE WIND IN THE WILLOWS', 'The In')
