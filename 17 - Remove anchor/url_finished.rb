@@ -10,7 +10,7 @@ remove_url_anchor('www.codewars.com?page=1')
 =end
 
 def remove_url_anchor(url)
-  # TODO: complete
+  return url.split('#')[0];
 end
 
 puts remove_url_anchor('www.codewars.com#about')
