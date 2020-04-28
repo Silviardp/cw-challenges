@@ -15,7 +15,8 @@ gimme([5, 10, 14]) => 1
 =end
 
 def gimme(input_array)
-  #your code here
+ array_sorted = input_array.sort
+ index = input_array.index(array_sorted[1])
 end
 
 puts gimme([2, 3, 1])
