@@ -4,7 +4,15 @@ The binary number returned should be a string.
 =end
 
 def add_binary(a,b)
-  #your code here
+  sum = a + b
+  # or other solution ->simpler
+  # sum.to_s(2)
+  binary = []
+  while sum > 0
+    binary << sum % 2
+    sum /= 2 # or sum = (sum/2)
+  end
+  binary.reverse.join
 end
 
 puts add_binary(1,1)
